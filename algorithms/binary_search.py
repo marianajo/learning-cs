@@ -1,5 +1,8 @@
 def binary_search(l, item):
-    
+    """Given an ordered list l and an item, return the item's position 
+    on the list. If the item cannot be found on the list, return None.
+    """
+
     low = 0
     high = len(l) - 1
 
@@ -14,9 +17,3 @@ def binary_search(l, item):
         else:
             low = half + 1
     return None
-
-
-l = [1, 3, 5, 7, 9]
-print(binary_search(l, 7))
-
-
