@@ -1,10 +1,10 @@
-def binary_search(l, item):
+def binary_search(l: list[int], item: int) -> int | None:
     """Given an ordered list l and an item, return the item's position 
     on the list. If the item cannot be found on the list, return None.
     """
 
-    low = 0
-    high = len(l) - 1
+    low: int = 0
+    high: int = len(l) - 1
 
     while low <= high:
         half = (low + high) // 2
